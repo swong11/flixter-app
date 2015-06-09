@@ -81,3 +81,22 @@ body {
 abbr[title="required"] {
   display: none;
 }
+
+.lesson {
+  background-color: black;
+  margin-top: 10px;
+  height: 130px;
+}
+
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
+
+.lesson a b {
+  color:white;
+  font-family: "Helvetica Neue",Helvetica;
+  font-weight:100;
+  font-size: 15px;
+}
