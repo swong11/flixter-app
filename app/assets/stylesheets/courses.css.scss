@@ -1,3 +1,18 @@
-// Place all the styles related to the courses controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.course {
+
+  h2 {
+    text-align: center;
+  }
+
+  .description {
+    @extend .col-sm-8; 
+    @extend .col-xs-12;
+  }
+
+  .details {
+    @extend .col-sm-4; 
+    @extend .col-xs-12; 
+    text-align: center;
+  }
+
+}

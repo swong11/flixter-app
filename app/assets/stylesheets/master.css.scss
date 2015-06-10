@@ -52,7 +52,10 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
+
 .booyah-box {
+  @extend .col-xs-10; 
+  @extend .col-xs-offset-1;
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -100,3 +103,5 @@ abbr[title="required"] {
   font-weight:100;
   font-size: 15px;
 }
+
+
