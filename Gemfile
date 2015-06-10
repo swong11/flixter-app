@@ -57,3 +57,5 @@ gem "figaro", ">= 1.0.0"
 gem 'carrierwave-aws'
 
 gem 'mini_magick'
+
+gem 'stripe'
