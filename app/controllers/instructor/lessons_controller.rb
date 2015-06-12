@@ -1,11 +1,7 @@
 class Instructor::LessonsController < ApplicationController
 	before_action :authenticate_user!
-	before_action :require_authorized_for_current_section, :only => [:new, :create]
+	before_action :require_authorized_for_current_section, :only => [:create]
 	before_action :require_authorized_for_current_lesson, :only => [:update]
-
-	def new
-		@lesson = Lesson.new
-	end
 
 	def create
 	    @lesson = current_section.lessons.create(lesson_params)
@@ -17,7 +13,8 @@ class Instructor::LessonsController < ApplicationController
   		render :text => 'updated!'
   	end
 
-#######
+
+
 
   	private
 
@@ -35,7 +32,7 @@ class Instructor::LessonsController < ApplicationController
   		if current_section.course.user != current_user
 	      return render :text => 'Unauthorized', :status => :unauthorized
 	    end
-	end    
+	  end    
 
   	helper_method :current_section
   	def current_section
