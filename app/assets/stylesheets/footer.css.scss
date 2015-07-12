@@ -16,7 +16,7 @@ body {
 
 /* Set the fixed height of the footer here */
 #footer {
-  height:$footer-height;
+  min-height:$footer-height;
   color: white;
   background-color: rgba(36,32,33,0.9);
   font-family: "Helvetica Neue",Helvetica;
@@ -43,7 +43,7 @@ $footer-height-mobile: 200px;
 
 @media (max-width: 750px) {
   #footer {
-    height:$footer-height-mobile;
+    min-height:$footer-height-mobile;
   }
 
   #wrap {
